@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import RootNavigator from '../components/ui/navigators/RootNavigator';
+import RootNavigator from '../components/navigators/RootNavigator';
 import { AuthProvider } from '../providers/AuthProvider';
 
 const queryClient = new QueryClient();

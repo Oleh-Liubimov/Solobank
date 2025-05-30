@@ -9,12 +9,14 @@ interface AuthProviderProps {
 
 export const AuthProvider = ({ children }: AuthProviderProps) => {
     const setUser = useAuthStore(state => state.setUser);
+    const setIsLoading = useAuthStore(state => state.setIsLoading);
 
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, user => {
+        const unsubscribe = onAuthStateChanged(auth, async user => {
             setUser(user);
+            setIsLoading(false);
         });
         return () => unsubscribe();
-    }, [setUser]);
+    }, [setIsLoading, setUser]);
     return <>{children}</>;
 };

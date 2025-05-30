@@ -19,5 +19,7 @@ export const COLORS = Object.freeze({
 
     black: '#000000',
 
+    blue: 'blue',
+
     darkBlue: '#192157',
 });
