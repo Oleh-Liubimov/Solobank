@@ -16,4 +16,8 @@ export const COLORS = Object.freeze({
     warning: '#FFC107',
     disabled: '#3A3A3A',
     border: '#333333',
+
+    black: '#000000',
+
+    darkBlue: '#192157',
 });

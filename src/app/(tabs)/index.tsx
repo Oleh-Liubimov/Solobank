@@ -1,9 +1,12 @@
+import { BackgroundGradient } from '@/src/components/ui/BackgroundGradient';
 import { COLORS } from '@/src/constants/colors';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native';
 
 export default function HomeScreen() {
     return (
         <SafeAreaView style={styles.flex1}>
+            <StatusBar barStyle={'light-content'} />
+            <BackgroundGradient />
             <View style={styles.container}>
                 <Text style={styles.text}>Home screen</Text>
             </View>
@@ -16,7 +19,6 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: COLORS.background,
     },
     text: {
         color: COLORS.onBackground,
