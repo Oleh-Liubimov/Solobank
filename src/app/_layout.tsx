@@ -1,14 +1,15 @@
-import { Stack } from 'expo-router';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import RootNavigator from '../components/ui/navigators/RootNavigator';
+import { AuthProvider } from '../providers/AuthProvider';
+
+const queryClient = new QueryClient();
 
 export default function RootLayout() {
     return (
-        <Stack>
-            <Stack.Screen
-                name="(tabs)"
-                options={{
-                    headerShown: false,
-                }}
-            />
-        </Stack>
+        <QueryClientProvider client={queryClient}>
+            <AuthProvider>
+                <RootNavigator />
+            </AuthProvider>
+        </QueryClientProvider>
     );
 }

@@ -1,29 +1,29 @@
 {
-  "project_info": {
-    "project_number": "699678024447",
-    "project_id": "solobank-efcfd",
-    "storage_bucket": "solobank-efcfd.firebasestorage.app"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:699678024447:android:3c5deb0a359629727b22ca",
-        "android_client_info": {
-          "package_name": "com.anonymous.SoloBank"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
+    "project_info": {
+        "project_number": "699678024447",
+        "project_id": "solobank-efcfd",
+        "storage_bucket": "solobank-efcfd.firebasestorage.app"
+    },
+    "client": [
         {
-          "current_key": "AIzaSyA3tmJ7I_uVxUlRf19jzNnuya9nwX7ihfY"
+            "client_info": {
+                "mobilesdk_app_id": "1:699678024447:android:3c5deb0a359629727b22ca",
+                "android_client_info": {
+                    "package_name": "com.anonymous.SoloBank"
+                }
+            },
+            "oauth_client": [],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyA3tmJ7I_uVxUlRf19jzNnuya9nwX7ihfY"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": []
+                }
+            }
         }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    }
-  ],
-  "configuration_version": "1"
+    ],
+    "configuration_version": "1"
 }
